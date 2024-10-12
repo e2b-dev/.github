@@ -2,7 +2,7 @@
 
 ## About E2B
 
-We make it easy for developers to add code interpreting to AI apps with the E2B SDK.
+We make it easy for developers to add code interpreting to AI apps with the E2B SDK. Read our documentation at [e2b.dev/docs](https://e2b.dev/docs).
 
 <h3>Getting started</h3>
 
@@ -14,11 +14,6 @@ We make it easy for developers to add code interpreting to AI apps with the E2B 
 - [E2B SDK](https://github.com/e2b-dev/E2B): The SDK & CLI for creating and controlling E2B sandboxes and adding code interpreting to AI apps
 - [Infra](https://github.com/e2b-dev/infra): Infrastructure powering E2B
 - [E2B Fragments](https://github.com/e2b-dev/fragments): Template for building fully AI-generated apps with E2B
-
-<h3>Docs</h3>
-
-Official documentation is at [e2b.dev/docs](https://e2b.dev/docs).
-
 
 <h2>Where to find us</h2>
 
