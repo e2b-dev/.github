@@ -6,7 +6,7 @@ We make it easy for developers to add code interpreting to AI apps with the E2B 
 
 <h3>Getting started</h3>
 
-- Start with the [Quickstart guide in our documentation](https://e2b.dev/docs/quickstart)
+- Start with the [Quickstart guide in our documentation](https://e2b.dev/docs/quickstart).
 
 <h3>Repositories</h3>
 
@@ -37,7 +37,7 @@ Need help setting up E2B? We are happy to connect! Give us any feedback on your 
 
 <h3>We are hiring!</h3>
 
-Check out the [open positions](https://e2bdev.notion.site/Careers-at-E2B-2163f176991f43f69b0984bf2a142920) at E2B. We are hiring in-person only in San Francisco.
+Check out the [open positions](https://e2b.dev/careers) at E2B. We are hiring in-person only in San Francisco.
 
 </li>
 
