@@ -27,7 +27,7 @@ Need help setting up E2B? We are happy to connect! Give us any feedback on your 
 <div align='center'>
 <!-- <a href="https://e2b.dev/docs" target="_blank">
 <img src="https://img.shields.io/badge/docs-%2300acee.svg?color=143D52&style=for-the-badge&logo=x&logoColor=white" alt=docs style="margin-bottom: 5px;"/></a>  -->
-<a href="https://twitter.com/e2b_dev" target="_blank">
+<a href="https://x.com/e2b" target="_blank">
 <img src="https://img.shields.io/badge/x (twitter)-%2300acee.svg?color=000000&style=for-the-badge&logo=x&logoColor=white" alt=linkedin style="margin-bottom: 5px;"/></a> 
 <a href="https://discord.com/invite/U7KEcGErtQ" target="_blank">
 <img src="https://img.shields.io/badge/discord -%2300acee.svg?color=143D52&style=for-the-badge&logo=discord&logoColor=white" alt=discord style="margin-bottom: 5px;"/></a> 
