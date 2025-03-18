@@ -19,7 +19,7 @@ We make it easy for developers to add code interpreting to AI apps with the E2B 
 
 - [Fragments](https://github.com/e2b-dev/fragments): Open-source template for building apps like Anthropic's Claude Artifacts, Vercel v0, or GPT Engineer.
 - [Surf](https://github.com/e2b-dev/surf): Surf is a computer use AI agent powered by OpenAI that interacts with a E2B's virtual desktop environment through natural language instructions.
-- [Secure Computure Use](https://github.com/e2b-dev/secure-computer-use): A secure cloud Linux computer powered by E2B Desktop Sandbox and controlled by Anthropic's Claude.
+- [Open Computer Use](https://github.com/e2b-dev/secure-computer-use): Open source AI computer use powered by E2B Desktop SDK.
 - [E2B Cookbook](https://github.com/e2b-dev/e2b-cookbook): Example code and guides for building with E2B SDK.
  
 <h3>Where to find us</h3>
