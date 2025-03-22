@@ -1,4 +1,5 @@
-<img src="organization-readme.png"/>
+![E2B Public Preview Light](/readme-assets/e2b-public-light.png#gh-light-mode-only)
+![E2B Public Preview Dark](/readme-assets/e2b-public-dark.png#gh-dark-mode-only)
 
 ## About E2B
 
