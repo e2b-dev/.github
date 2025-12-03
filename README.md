@@ -95,7 +95,7 @@ Need help setting up E2B? We are happy to connect! Give us any feedback on your 
 
 <h2>We are hiring!</h2>
 
-Check out the [open positions](https://e2bdev.notion.site/Careers-at-E2B-2163f176991f43f69b0984bf2a142920) at E2B. We are hiring in-person only in San Francisco.
+Check out the [open positions](https://e2b.dev/careers) at E2B. We are hiring in-person only in San Francisco.
 
 </li>
 
