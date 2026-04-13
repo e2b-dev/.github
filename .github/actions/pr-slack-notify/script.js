@@ -17,13 +17,14 @@ function getEvent() {
 }
 
 // Escape characters that have special meaning in Slack mrkdwn link labels.
-// Prevents injection via PR titles (e.g. <!everyone> or pipe breaking links).
+// Prevents injection via PR titles (e.g. <!everyone>).
+// Slack only decodes &amp; &lt; &gt; — no other HTML entities.
+// Pipe (|) doesn't need escaping: Slack splits on the first | in <url|label>.
 function escapeSlackLabel(text) {
   return text
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/\|/g, "&#124;");
+    .replace(/>/g, "&gt;");
 }
 
 function getPR(ev) {
