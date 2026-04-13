@@ -1,0 +1,46 @@
+name: Post PR to Slack
+
+on:
+  workflow_call:
+    inputs:
+      channel_id:
+        description: 'Slack channel ID to post to'
+        required: true
+        type: string
+      review_group:
+        description: 'Slack user group ID to tag (e.g. @pr-infra)'
+        required: true
+        type: string
+    secrets:
+      SLACK_BOT_TOKEN:
+        description: 'Slack bot token'
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout .github repo
+        uses: actions/checkout@v5
+        with:
+          repository: e2b-dev/.github
+          sparse-checkout: .github/actions/pr-slack-notify
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Install deps
+        run: npm ci
+        working-directory: .github/actions/pr-slack-notify
+
+      - name: Post to Slack
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_CHANNEL_ID: ${{ inputs.channel_id }}
+          SLACK_REVIEW_GROUP: ${{ inputs.review_group }}
+        run: node .github/actions/pr-slack-notify/script.js
