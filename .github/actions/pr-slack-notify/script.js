@@ -16,39 +16,16 @@ function getEvent() {
   return JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH, "utf8"));
 }
 
-function getPR(ev) {
-  // Support manual trigger via workflow_dispatch
-  if (process.env.PR_URL) {
-    return {
-      number: parseInt(process.env.PR_NUMBER, 10),
-      title: process.env.PR_TITLE || "PR",
-      html_url: process.env.PR_URL,
-      user: { login: process.env.PR_AUTHOR || "unknown" },
-    };
-  }
-
-  const pr = ev.pull_request;
-  if (!pr) return null;
-
-  return {
-    number: pr.number,
-    title: pr.title,
-    html_url: pr.html_url,
-    user: { login: pr.user.login },
-  };
-}
-
 (async () => {
   const ev = getEvent();
-  const pr = getPR(ev);
+  const pr = ev.pull_request;
 
   if (!pr) {
-    console.log("No PR in event; exiting.");
+    console.log("No pull_request in event; exiting.");
     return;
   }
 
-  // Skip draft PRs
-  if (ev.pull_request?.draft) {
+  if (pr.draft) {
     console.log(`PR #${pr.number} is a draft; skipping.`);
     return;
   }
