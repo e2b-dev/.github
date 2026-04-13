@@ -38,7 +38,8 @@ function getEvent() {
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;");
 
-  const message = `<!subteam^${reviewGroup}> — new PR needs review\n*<${pr.html_url}|#${pr.number} — ${safeTitle}>* by ${pr.user.login}`;
+  const repo = process.env.GITHUB_REPOSITORY || "unknown";
+  const message = `<!subteam^${reviewGroup}> — new PR needs review\n*<${pr.html_url}|${repo}#${pr.number} — ${safeTitle}>* by ${pr.user.login}`;
 
   await slack.chat.postMessage({
     channel: channelId,
