@@ -11,6 +11,22 @@ on:
         description: 'Slack user group ID to tag (e.g. @pr-infra)'
         required: true
         type: string
+      pr_number:
+        description: 'PR number (for manual trigger only)'
+        required: false
+        type: string
+      pr_title:
+        description: 'PR title (for manual trigger only)'
+        required: false
+        type: string
+      pr_url:
+        description: 'PR URL (for manual trigger only)'
+        required: false
+        type: string
+      pr_author:
+        description: 'PR author (for manual trigger only)'
+        required: false
+        type: string
     secrets:
       SLACK_BOT_TOKEN:
         description: 'Slack bot token'
@@ -43,4 +59,8 @@ jobs:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
           SLACK_CHANNEL_ID: ${{ inputs.channel_id }}
           SLACK_REVIEW_GROUP: ${{ inputs.review_group }}
+          PR_NUMBER: ${{ inputs.pr_number }}
+          PR_TITLE: ${{ inputs.pr_title }}
+          PR_URL: ${{ inputs.pr_url }}
+          PR_AUTHOR: ${{ inputs.pr_author }}
         run: node .github/actions/pr-slack-notify/script.js

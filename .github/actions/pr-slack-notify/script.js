@@ -16,9 +16,35 @@ function getEvent() {
   return JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH, "utf8"));
 }
 
+// Escape characters that have special meaning in Slack mrkdwn link labels.
+// Prevents injection via PR titles (e.g. <!everyone> or pipe breaking links).
+function escapeSlackLabel(text) {
+  return text
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/\|/g, "&#124;");
+}
+
+function getPR(ev) {
+  // Support manual trigger via workflow_dispatch.
+  // The caller workflow passes PR details as env vars.
+  if (process.env.PR_NUMBER) {
+    return {
+      number: parseInt(process.env.PR_NUMBER, 10),
+      title: process.env.PR_TITLE || "PR",
+      html_url: process.env.PR_URL || "",
+      user: { login: process.env.PR_AUTHOR || "unknown" },
+      draft: false,
+    };
+  }
+
+  return ev.pull_request || null;
+}
+
 (async () => {
   const ev = getEvent();
-  const pr = ev.pull_request;
+  const pr = getPR(ev);
 
   if (!pr) {
     console.log("No pull_request in event; exiting.");
@@ -30,14 +56,7 @@ function getEvent() {
     return;
   }
 
-  // Escape Slack mrkdwn control characters to prevent injection via PR title.
-  // A fork contributor could craft a title with > or <!everyone> to break
-  // formatting or trigger channel-wide pings.
-  const safeTitle = pr.title
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;");
-
+  const safeTitle = escapeSlackLabel(pr.title);
   const repo = process.env.GITHUB_REPOSITORY || "unknown";
   const message = `<!subteam^${reviewGroup}> — new PR needs review\n*<${pr.html_url}|${repo}#${pr.number} — ${safeTitle}>* by ${pr.user.login}`;
 
