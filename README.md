@@ -13,10 +13,10 @@ We make it easy for developers to add code interpreting to AI apps with our Code
 
 <h3>Docs</h3>
 
-Official documentation is at [e2b.dev/docs](https://e2b.dev/docs).
+Official documentation is at [e2b.dev/docs](https://e2b.dev/docs?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=.github).
 
 <!---
-The Code Interpreter SDK is built on top of our open-source [runtime for AI agents](https://github.com/e2b-dev/e2b). Get started with [our docs](https://e2b.dev/docs).
+The Code Interpreter SDK is built on top of our open-source [runtime for AI agents](https://github.com/e2b-dev/e2b). Get started with [our docs](https://e2b.dev/docs?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=.github).
 The SDK features make it a natural building block for AI engineers.
 --->
 
@@ -47,9 +47,9 @@ E2B works with any LLM and you can use it with popular AI frameworks like LangCh
 <!---
 <h3>Guides</h3>
 
-- [Build custom Code Interpreter with E2B and GPT-4](https://e2b.dev/docs/guide/simple-gpt4-code-interpreter)
-- [Use E2B Sandbox with OpenAI Assistants API](https://e2b.dev/docs/llm-platforms/openai#python)
-- [Create a custom sandbox](https://e2b.dev/docs/guide/custom-sandbox)
+- [Build custom Code Interpreter with E2B and GPT-4](https://e2b.dev/docs/guide/simple-gpt4-code-interpreter?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=.github)
+- [Use E2B Sandbox with OpenAI Assistants API](https://e2b.dev/docs/llm-platforms/openai?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=.github#python)
+- [Create a custom sandbox](https://e2b.dev/docs/guide/custom-sandbox?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=.github)
 
 --->
 
@@ -64,11 +64,11 @@ E2B works with any LLM and you can use it with popular AI frameworks like LangCh
 <!---
 <h3>Premade sandboxes to try</h3>
 
-- [Default Sandbox](https://e2b.dev/docs/sandbox/templates/premade#1-default-sandbox)
-- [Code Interpreter Sandbox](https://e2b.dev/docs/sandbox/templates/premade#2-code-interpreter-data-analysis-sandbox)
+- [Default Sandbox](https://e2b.dev/docs/sandbox/templates/premade?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=.github#1-default-sandbox)
+- [Code Interpreter Sandbox](https://e2b.dev/docs/sandbox/templates/premade?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=.github#2-code-interpreter-data-analysis-sandbox)
 - (Soon) Cloud Browser Sandbox
   
-Or build your [**Custom Sandbox**](https://e2b.dev/docs/sandbox/templates/overview).
+Or build your [**Custom Sandbox**](https://e2b.dev/docs/sandbox/templates/overview?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=.github).
 --->
 
 <!--
@@ -84,7 +84,7 @@ Or build your [**Custom Sandbox**](https://e2b.dev/docs/sandbox/templates/overvi
 
 Need help setting up E2B? We are happy to connect! Give us any feedback on your experience with E2B. 
 <div align='left'>
-<!-- <a href="https://e2b.dev/docs" target="_blank">
+<!-- <a href="https://e2b.dev/docs?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=.github" target="_blank">
 <img src="https://img.shields.io/badge/docs-%2300acee.svg?color=143D52&style=for-the-badge&logo=x&logoColor=white" alt=docs style="margin-bottom: 5px;"/></a>  -->
 <a href="https://twitter.com/e2b_dev" target="_blank">
 <img src="https://img.shields.io/badge/x (twitter)-%2300acee.svg?color=000000&style=for-the-badge&logo=x&logoColor=white" alt=linkedin style="margin-bottom: 5px;"/></a> 
@@ -95,7 +95,7 @@ Need help setting up E2B? We are happy to connect! Give us any feedback on your 
 
 <h2>We are hiring!</h2>
 
-Check out the [open positions](https://e2b.dev/careers) at E2B. We are hiring in-person only in San Francisco.
+Check out the [open positions](https://e2b.dev/careers?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=.github) at E2B. We are hiring in-person only in San Francisco.
 
 </li>
 
