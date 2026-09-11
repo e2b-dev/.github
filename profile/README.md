@@ -37,9 +37,11 @@ E2B also ships sandbox backends for [Vercel AI SDK](https://github.com/e2b-dev/a
 
 Questions, feedback, or need help getting set up? Join the community or reach out on social.
 
-[![Discord](https://img.shields.io/badge/discord-join-5865F2.svg?logo=discord&logoColor=white)](https://discord.gg/e2b)
-[![X](https://img.shields.io/badge/follow-%40e2b-000000.svg?logo=x&logoColor=white)](https://x.com/e2b)
-[![LinkedIn](https://img.shields.io/badge/linkedin-e2b--dev-0A66C2.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/company/e2b-dev/)
+<p align="center">
+  <a href="https://discord.gg/e2b"><img alt="Discord" src="https://img.shields.io/badge/discord-join-5865F2.svg?logo=discord&logoColor=white"></a>
+  <a href="https://x.com/e2b"><img alt="X" src="https://img.shields.io/badge/follow-%40e2b-000000.svg?logo=x&logoColor=white"></a>
+  <a href="https://www.linkedin.com/company/e2b-dev/"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-e2b--dev-0A66C2.svg?logo=linkedin&logoColor=white"></a>
+</p>
 
 ### We are hiring!
 
