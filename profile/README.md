@@ -7,11 +7,11 @@
 
 [E2B](https://e2b.dev/?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=org) is the AI agent cloud. It gives every agent session an isolated Linux machine that boots from a snapshot and works with any model or agent framework. You ship the agent. We run the infrastructure. Our cloud or yours.
 
-This GitHub organization hosts every layer of that stack in the open, under Apache-2.0: the Firecracker runtime, the control plane, the in-VM agent, the SDKs, and the dashboard. The code running E2B Cloud is the code in these repositories. Read the documentation at [docs.e2b.dev](https://docs.e2b.dev).
+This GitHub organization hosts every layer of that stack in the open, under Apache-2.0: the Firecracker runtime, the control plane, the in-VM agent, the SDKs, and the dashboard. The code running E2B Cloud is the code in these repositories. Read the documentation at [docs.e2b.dev](https://docs.e2b.dev/?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=org).
 
 ### Getting started
 
-- Start with the [Quickstart guide in our documentation](https://docs.e2b.dev/quickstart).
+- Start with the [Quickstart guide in our documentation](https://docs.e2b.dev/quickstart?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=org).
 - Get an API key at [e2b.dev](https://e2b.dev/?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=org), then `npm i e2b` or `pip install e2b`.
 - Want the whole stack on a machine you own? [E2B Embed](https://github.com/e2b-dev/runtime/tree/main/embed) brings it up with `docker compose up`.
 
