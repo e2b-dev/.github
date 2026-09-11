@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="/readme-assets/e2b-open-source-dark.png">
-  <img alt="E2B Open Source" src="/readme-assets/e2b-open-source-light.png" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="/.github/assets/e2b-open-source-dark.png">
+  <img alt="E2B Open Source" src="/.github/assets/e2b-open-source-light.png" width="100%">
 </picture>
 
 ## About E2B
