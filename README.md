@@ -1,105 +1,50 @@
-![E2B Public Preview Light](/readme-assets/e2b-public-light.png#gh-light-mode-only)
-![E2B Public Preview Dark](/readme-assets/e2b-public-dark.png#gh-dark-mode-only)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="/.github/assets/e2b-open-source-dark.png">
+  <img alt="E2B Open Source" src="/.github/assets/e2b-open-source-light.png" width="100%">
+</picture>
 
 ## About E2B
 
-E2B runs the isolated machine your agent works on. You ship the agent. We run the infrastructure. Our cloud or yours.
+[E2B](https://e2b.dev/?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=org) is the AI agent cloud. It gives every agent session an isolated Linux machine that boots from a snapshot and works with any model or agent framework. You ship the agent. We run the infrastructure. Our cloud or yours.
 
+This GitHub organization hosts every layer of that stack in the open, under Apache-2.0: the Firecracker runtime, the control plane, the in-VM agent, the SDKs, and the dashboard. The code running E2B Cloud is the code in these repositories. Read the documentation at [docs.e2b.dev](https://docs.e2b.dev).
+
+<h3>Getting started</h3>
+
+- Start with the [Quickstart guide in our documentation](https://docs.e2b.dev/quickstart).
+- Get an API key at [e2b.dev](https://e2b.dev/?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=org), then `npm i e2b` or `pip install e2b`.
+- Want the whole stack on a machine you own? [E2B Embed](https://github.com/e2b-dev/runtime/tree/main/embed) brings it up with `docker compose up`.
 
 <h3>Repositories</h3>
 
-- [E2B](https://github.com/e2b-dev/E2B): The core SDK & CLI
-- [Code Interpreter](https://github.com/e2b-dev/code-interpreter): SDK for adding code interpreting to AI apps (built on top of E2B)
-- [Infra](https://github.com/e2b-dev/infra): Infrastructure powering E2B
+- [E2B Runtime](https://github.com/e2b-dev/runtime): The runtime behind every E2B stack: Cloud, Enterprise, and your own machine. Control plane, Firecracker orchestrator, in-VM agent, edge router, and template builder, in Go.
+- [E2B SDK](https://github.com/e2b-dev/E2B): The SDK & CLI for JavaScript and Python. Create sandboxes, run commands, move files, expose ports, pause and resume.
+- [E2B Code Interpreter](https://github.com/e2b-dev/code-interpreter): Python & JS/TS SDK for running AI-generated code with stateful execution, charts, and streaming output. Built on the E2B SDK.
+- [E2B Desktop](https://github.com/e2b-dev/desktop): E2B Sandbox with a graphical desktop that you can connect to any LLM for secure computer use.
+- [E2B Dashboard](https://github.com/e2b-dev/dashboard): Open-source dashboard for a runtime you host yourself. Sandboxes, templates, and builds behind a team API key.
 
-<h3>Docs</h3>
+<h3>Examples</h3>
 
-Official documentation is at [e2b.dev/docs](https://e2b.dev/docs?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=.github).
+- [Fragments](https://github.com/e2b-dev/fragments): Open-source template for building apps like Anthropic's Claude Artifacts, Vercel v0, or GPT Engineer.
+- [Surf](https://github.com/e2b-dev/surf): A computer-use agent that drives an E2B desktop through natural language instructions.
+- [Open Computer Use](https://github.com/e2b-dev/open-computer-use): Open-source AI computer use powered by open-source LLMs and the E2B Desktop Sandbox.
+- [AI Analyst](https://github.com/e2b-dev/ai-analyst): Upload a CSV, ask questions, get interactive charts. An open-source AI analyst on E2B.
+- [E2B Cookbook](https://github.com/e2b-dev/e2b-cookbook): Example code and guides for every major model provider and agent framework.
 
-<!---
-The Code Interpreter SDK is built on top of our open-source [runtime for AI agents](https://github.com/e2b-dev/e2b). Get started with [our docs](https://e2b.dev/docs?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=.github).
-The SDK features make it a natural building block for AI engineers.
---->
+E2B also ships sandbox backends for [Vercel AI SDK](https://github.com/e2b-dev/ai-sdk-sandbox), [LangChain Deep Agents](https://github.com/e2b-dev/langchain-e2b), [Google ADK](https://github.com/e2b-dev/e2b-adk-plugin), [n8n](https://github.com/e2b-dev/n8n-nodes-e2b), and [Hermes Agent](https://github.com/e2b-dev/hermes-plugin-e2b), and maintains [awesome-ai-agents](https://github.com/e2b-dev/awesome-ai-agents), the list of AI autonomous agents.
 
-<!---
-- Works with any LLM and AI framework
-- Supports streaming content like charts and stdout, stderr
-- Python & JS SDK
-- 100% open source.
+<h3>Where to find us</h3>
 
-E2B works with any LLM and you can use it with popular AI frameworks like LangChain, AutoGen, or CrewAI. For inspiration, see our [Cookbook](https://github.com/e2b-dev/e2b-cookbook).
---->
-
-<!---
-<h3>E2B works with any LLM...</h3>
-
-- [Anthropic Claude 3 Opus with a code interpreter](https://github.com/e2b-dev/e2b-cookbook/blob/main/examples/claude-code-interpreter/claude_code_interpreter.ipynb)
-- [🦙 Llama 3 with code interpreter](https://github.com/e2b-dev/e2b-cookbook/tree/main/examples/llama-3-code-interpreter)
-- [Mixtral with code interpreter and chat UI](https://github.com/e2b-dev/e2b-cookbook/tree/main/templates/mixtral-8x7b-code-interpreter-nextjs)
-
-<h3>... And with popular AI frameworks</h3>
-
-- [🦜⛓️ LangChain with code interpreter](https://github.com/e2b-dev/e2b-cookbook/tree/main/examples/langchain-python)
-- [🦜🕸️ LangGraph with code interpreter](https://github.com/e2b-dev/e2b-cookbook/tree/main/examples/langgraph-python)
-- [Autogen with secure sandboxed code interpreter](https://github.com/e2b-dev/e2b-cookbook/tree/main/examples/e2b_autogen)
-
---->
-
-<!---
-<h3>Guides</h3>
-
-- [Build custom Code Interpreter with E2B and GPT-4](https://e2b.dev/docs/guide/simple-gpt4-code-interpreter?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=.github)
-- [Use E2B Sandbox with OpenAI Assistants API](https://e2b.dev/docs/llm-platforms/openai?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=.github#python)
-- [Create a custom sandbox](https://e2b.dev/docs/guide/custom-sandbox?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=.github)
-
---->
-
-<!---
-<h3>Use cases & community examples</h3>
-
-- [OpenDevin - an open-source AI software engineer using E2B sandboxes](https://github.com/OpenDevin/OpenDevin)
-- [OpenAI integration for Discord](https://github.com/Kav-K/GPTDiscord) 
-- [Custom Code Interpreter with AgentLabs and E2B](https://docs.agentlabs.dev/recipes/code-interpreter)
---->
-
-<!---
-<h3>Premade sandboxes to try</h3>
-
-- [Default Sandbox](https://e2b.dev/docs/sandbox/templates/premade?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=.github#1-default-sandbox)
-- [Code Interpreter Sandbox](https://e2b.dev/docs/sandbox/templates/premade?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=.github#2-code-interpreter-data-analysis-sandbox)
-- (Soon) Cloud Browser Sandbox
-  
-Or build your [**Custom Sandbox**](https://e2b.dev/docs/sandbox/templates/overview?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=.github).
---->
-
-<!--
-<h3>E2B supports</h3>
-<p align="left">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="php" width="45" height="45"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="php" width="45" height="45"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="php" width="45" height="45"/>
-</p>
--->
-
-<h2>Where to find us</h2>
-
-Need help setting up E2B? We are happy to connect! Give us any feedback on your experience with E2B. 
-<div align='left'>
-<!-- <a href="https://e2b.dev/docs?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=.github" target="_blank">
-<img src="https://img.shields.io/badge/docs-%2300acee.svg?color=143D52&style=for-the-badge&logo=x&logoColor=white" alt=docs style="margin-bottom: 5px;"/></a>  -->
-<a href="https://twitter.com/e2b_dev" target="_blank">
-<img src="https://img.shields.io/badge/x (twitter)-%2300acee.svg?color=000000&style=for-the-badge&logo=x&logoColor=white" alt=linkedin style="margin-bottom: 5px;"/></a> 
-<a href="https://discord.com/invite/U7KEcGErtQ" target="_blank">
-<img src="https://img.shields.io/badge/discord -%2300acee.svg?color=143D52&style=for-the-badge&logo=discord&logoColor=white" alt=discord style="margin-bottom: 5px;"/></a> 
+Need help setting up E2B? We are happy to connect! Give us any feedback on your experience with E2B.
+<div align='center'>
+<a href="https://x.com/e2b" target="_blank">
+<img src="https://img.shields.io/badge/x (twitter)-%2300acee.svg?color=000000&style=for-the-badge&logo=x&logoColor=white" alt="X" style="margin-bottom: 5px;"/></a>
+<a href="https://discord.gg/e2b" target="_blank">
+<img src="https://img.shields.io/badge/discord -%2300acee.svg?color=143D52&style=for-the-badge&logo=discord&logoColor=white" alt="Discord" style="margin-bottom: 5px;"/></a>
 <a href="https://www.linkedin.com/company/e2b-dev/" target="_blank">
-<img src="https://img.shields.io/badge/linkedin-%2300acee.svg?color=000000&style=for-the-badge&logo=linkedin&logoColor=white" alt=linkedin style="margin-bottom: 5px;"/></a> 
+<img src="https://img.shields.io/badge/linkedin-%2300acee.svg?color=000000&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" style="margin-bottom: 5px;"/></a>
+</div>
 
-<h2>We are hiring!</h2>
+<h3>We are hiring!</h3>
 
-Check out the [open positions](https://e2b.dev/careers?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=.github) at E2B. We are hiring in-person only in San Francisco.
-
-</li>
-
-<br>
-
-
+We are building the infrastructure layer for AI agents. Check out the [open positions](https://e2b.dev/careers?utm_source=github&utm_medium=referral&utm_campaign=readme&utm_content=org) at E2B.
