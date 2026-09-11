@@ -3,7 +3,8 @@
 
 ## About E2B
 
-We make it easy for developers to add code interpreting to AI apps with our Code Interpreter SDK.
+E2B runs the isolated machine your agent works on. You ship the agent. We run the infrastructure. Our cloud or yours.
+
 
 <h3>Repositories</h3>
 
